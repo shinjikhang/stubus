@@ -168,8 +168,7 @@ class HomeController extends Controller
         $chuyenxe = DB::table('chuyenxe')
             ->join("xe", "chuyenxe.idxe", "=", "xe.idxe")
             ->where('idtuyenxe', $id)
-            ->where('ngaydi', '=', $time)
-            ->where('giodi', '>', $time1)
+            ->where('ngaydi', '>=', $time)
             ->get();
         $tuyenxe      = DB::table('tuyenxe')->where('idtuyenxe', $id)->first();
         $diemkhoihanh = DB::table('tuyenxe')->select('diemdi')->distinct()->get();

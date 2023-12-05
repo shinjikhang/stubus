@@ -25,7 +25,7 @@
                   <div class="col-md-4 ftco-animate">
                     <div class="project-wrap">
                         <div class="img">
-                            <img src="/images/anhxe/{{$chuyen->hinhxe}}" alt="">
+                            <img src="/images/anhxe/{{$chuyen->hinhxe}}" alt="" style="width:100%">
                             <span class="price">{{number_format($tuyenxe->dongia)}} VND</span>
                         </div>
                         <div class="text p-4">

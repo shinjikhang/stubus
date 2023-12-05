@@ -131,7 +131,7 @@
             @if($di->diemdi == $tuyen->diemdi)
             <div class="col-md-4 ftco-animate">
                 <div class="project-wrap">
-                    <a href="{{URL::to('tuyenxe/'.$tuyen->idtuyenxe)}}" class="img" style="background-image: url(images/anhtuyenxe/{{$tuyen->hinhanh}});">
+                    <a href="{{URL::to('tuyenxe/'.$tuyen->idtuyenxe)}}" class="img" style="background-image: url(images/anhtuyenxe/{{$tuyen->hinhanh}});" style="width:100%">
                         <span class="price">{{number_format($tuyen->dongia)}} VND</span>
                     </a>
                     <div class="text p-4">
